@@ -41,7 +41,7 @@ resource "azurerm_virtual_machine" "mod" {
     }
 
     provisioner "remote-exec" {
-        inline = ["${split(",", var.remote_exec_1)}"]
+        inline = "${var.remote_exec_1)}"
     }
 
     provisioner "file" {
@@ -50,6 +50,6 @@ resource "azurerm_virtual_machine" "mod" {
     }
 
     provisioner "remote-exec" {
-        inline = ["${split(",", var.remote_exec_2)}"]
+        inline = "${var.remote_exec_2}"
     }
 }

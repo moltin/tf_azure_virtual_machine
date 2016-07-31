@@ -25,7 +25,7 @@ variable "ssh_keys_key_data" {}
 variable "ip_address" {}
 variable "private_key" {}
 
-variable "remote_exec_1" {}
+variable "remote_exec_1" { type = "list" }
 variable "sources" {}
 variable "destinations" {}
-variable "remote_exec_2" {}
+variable "remote_exec_2" { type = "list" }
