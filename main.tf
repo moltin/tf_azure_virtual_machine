@@ -34,7 +34,7 @@ resource "azurerm_virtual_machine" "mod" {
     }
 
     connection {
-        user = "${var.mod.os_profile.username}"
+        user = "${var.os_profile_username}"
         type = "ssh"
         host = "${var.ip_address}"
         private_key = "${var.private_key}"
