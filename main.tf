@@ -26,7 +26,7 @@ resource "azurerm_virtual_machine" "mod" {
     }
 
     os_profile_linux_config {
-        disable_password_authentication = ${var.disable_password_authentication}
+        disable_password_authentication = "${var.disable_password_authentication}"
         ssh_keys {
             path = "${var.ssh_keys_path}"
             key_data = "${var.ssh_keys_key_data}"
