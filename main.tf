@@ -41,7 +41,7 @@ resource "azurerm_virtual_machine" "mod" {
     }
 
     provisioner "remote-exec" {
-        inline = "${var.remote_exec_1)}"
+        inline = "${var.remote_exec_1}"
     }
 
     provisioner "file" {
