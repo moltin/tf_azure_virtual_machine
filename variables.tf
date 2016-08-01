@@ -14,6 +14,12 @@ variable "os_disk_vhd_uri" {}
 variable "os_disk_caching" {}
 variable "os_disk_create_option" {}
 
+variable "data_disk_name" {}
+variable "data_disk_vhd_uri" {}
+variable "data_disk_create_option" {}
+variable "data_disk_size_gb" {}
+variable "data_disk_lun" {}
+
 variable "os_profile_computer_name" {}
 variable "os_profile_username" {}
 variable "os_profile_password" {}
@@ -26,6 +32,8 @@ variable "ip_address" {}
 variable "private_key" {}
 
 variable "remote_exec_1" { type = "list" }
-variable "sources" {}
-variable "destinations" {}
+variable "source_1" { }
+variable "destination_1" { }
+variable "source_2" { }
+variable "destination_2" { }
 variable "remote_exec_2" { type = "list" }
