@@ -14,6 +14,12 @@ variable "os_disk_vhd_uri" {}
 variable "os_disk_caching" {}
 variable "os_disk_create_option" {}
 
+variable "data_disk_name" {}
+variable "data_disk_vhd_uri" {}
+variable "data_disk_create_option" {}
+variable "data_disk_size_gb" {}
+variable "data_disk_lun" {}
+
 variable "os_profile_computer_name" {}
 variable "os_profile_username" {}
 variable "os_profile_password" {}

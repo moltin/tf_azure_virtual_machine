@@ -19,6 +19,14 @@ resource "azurerm_virtual_machine" "mod" {
         create_option = "${var.os_disk_create_option}"
     }
 
+    storage_data_disk  {
+        name = "${var.data_disk_name}"
+        vhd_uri = "${var.data_disk_vhd_uri}"
+        create_option = "${var.data_disk_create_option}"
+        disk_size_gb = "${var.data_disk_size_gb}"
+        lun = "${var.data_disk_lun}"
+    }
+
     os_profile {
         computer_name = "${var.os_profile_computer_name}"
         admin_username = "${var.os_profile_username}"
