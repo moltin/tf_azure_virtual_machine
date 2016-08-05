@@ -19,6 +19,8 @@ resource "azurerm_virtual_machine" "mod" {
         create_option = "${var.os_disk_create_option}"
     }
 
+    delete_os_disk_on_termination = true
+
     os_profile {
         computer_name = "${var.os_profile_computer_name}"
         admin_username = "${var.os_profile_username}"

@@ -19,6 +19,8 @@ resource "azurerm_virtual_machine" "mod" {
         create_option = "${var.os_disk_create_option}"
     }
 
+    delete_os_disk_on_termination = true
+    
     storage_data_disk  {
         name = "${var.data_disk_name}"
         vhd_uri = "${var.data_disk_vhd_uri}"
