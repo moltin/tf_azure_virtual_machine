@@ -28,7 +28,7 @@ A Terraform module to provide a Virtual Machine on Microsoft Azure.
 - `ssh_keys_path` - Specifies a collection of path and key_data to be placed on the virtual machine.
 - `ssh_keys_key_data` - Specifies a collection of path and key_data to be placed on the virtual machine.
 
-> Note: That there are two flavors of this repo one with and without a `data disk` check source on the module `github.com/moltin/tf_azure_virtual_machine//with_data_disk`, the one without won't need the `os_disk_*` variables.
+> Note: There are two flavors of this repo one with and without a `data disk`, check `source` on the module `github.com/moltin/tf_azure_virtual_machine//with_data_disk`, the one without won't need the `os_disk_*` variables.
 
 # Run
 
